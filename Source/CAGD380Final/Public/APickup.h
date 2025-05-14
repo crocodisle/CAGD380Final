@@ -12,7 +12,13 @@ UENUM(BlueprintType)
 enum class PickupType : uint8
 {
 	Food,
-	Treasure
+	Treasure,
+	MagDmg,
+	ShotDmg,
+	ShotSpd,
+	MoveSpd,
+	AtkDmg,
+	Invisibility
 };
 
 UCLASS()
