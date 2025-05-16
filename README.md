@@ -12,13 +12,13 @@ Wyatt and Patrick are two Unity devs who, before this project, have had no exper
 
 Upon loading up Level1, the character can be moved using WASD, with J attacking the area just in front of the player and K firing a projectile. 
 
-Generators have been implemented, and they can be placed in the scene. They expose an Object To Spawn variable that designers can change in-editor to be whatever actor class they desire. They can also be destroyed.
+Generators have been implemented, and they can be placed in the scene. They expose an Object To Spawn variable that designers can change in-editor to be whatever actor class they desire. They can also be destroyed by the player.
 
-BP_PawnTestEnemy holds our implementation of enemy code. The enemy follows the player and hurts them over time once collided with them. They can be destroyed. This could be modified to allow for different varieties of enemies. 
+BP_PawnTestEnemy holds our implementation of enemy code. The enemy follows the player and hurts them over time once collided with them. They can be destroyed by the player. This could be modified to allow for different varieties of enemies. 
 
 The BP_ThirdPersonCharacter holds our implementation of player character code. The BP_StatComponent holds variables for player stats that are used in gameplay, and sits as a component on BP_ThirdPersonCharacter. These stats have been modified based on what information we could find about the Warrior, Valkyrie, Wizard, and Elf characters. 
 
-The public C++ Pickup class is the base class for all of our pickup objects. It provides the basis for all pickup functionality, and it has been implemented in a few pickup prefabs for what was mentioned on the Gauntlet wiki. Pickups have the ability to affect player stats depending on an enum value used for switching. We couldn't find any solid documentation as to how each individual pickup functioned exactly, but the ability for the statistics to be modified in the editor is available and could be balanced as needed. The Score variable is implemented in GI_CustomGameInstance with the idea that it would be accessible from any room. 
+The public C++ Pickup class is the base class for all of our pickup objects. It provides the basis for all pickup functionality, and it has been implemented in a few pickup prefabs for what was mentioned on the Gauntlet wiki. Pickups have the ability to affect player stats depending on an enum value used for switching. We couldn't find any solid documentation as to how each individual pickup functioned exactly, but the ability for the statistics to be modified in the editor is available and could be balanced as needed. The Score variable is implemented in GI_CustomGameInstance with the idea that it would be accessible from any room. Pickups can be destroyed by the player.
 
 ## Postmortem
 
