@@ -18,7 +18,7 @@ BP_PawnTestEnemy holds our implementation of enemy code. The enemy follows the p
 
 The BP_ThirdPersonCharacter holds our implementation of player character code. The BP_StatComponent holds variables for player stats that are used in gameplay, and sits as a component on BP_ThirdPersonCharacter. These stats have been modified based on what information we could find about the Warrior, Valkyrie, Wizard, and Elf characters. 
 
-The public C++ Pickup class is the base class for all of our pickup objects. It provides the basis for all pickup functionality, and it has been implemented in a few pickup prefabs for what was mentioned on the Gauntlet wiki. Pickups have the ability to affect player stats depending on an enum value used for switching. We couldn't find any solid documentation as to how each individual pickup functioned exactly, but the ability for the statistics to be modified in the editor is available and could be balanced as needed. 
+The public C++ Pickup class is the base class for all of our pickup objects. It provides the basis for all pickup functionality, and it has been implemented in a few pickup prefabs for what was mentioned on the Gauntlet wiki. Pickups have the ability to affect player stats depending on an enum value used for switching. We couldn't find any solid documentation as to how each individual pickup functioned exactly, but the ability for the statistics to be modified in the editor is available and could be balanced as needed. The Score variable is implemented in GI_CustomGameInstance with the idea that it would be accessible from any room. 
 
 ## Postmortem
 
