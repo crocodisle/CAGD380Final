@@ -2,15 +2,17 @@ Unreal Editor version 5.0.3
 
 ## Preface
 
-This is a coding project for CAGD 380. The project is to create a prototype that implements features from the popular arcade game Gauntlet. 
+This is a coding project for CAGD 380. The project is to create a prototype that implements features from the popular arcade game Gauntlet.
 
 ## About the Developers
 
-Wyatt and Patrick are two Unity devs who, before this project, have had no experience developing in Unreal. This experience has been an exploration not only of the assignment but of the engine as a whole. 
+Wyatt and Patrick are two Unity devs who, before this project, have had no experience developing in Unreal. This experience has been an exploration not only of the assignment but of the engine as a whole.
+
+In total, this project was a collaborative group effort in terms of learning. All problems & creations were solved through collaborative discussion, tutorial review, and equal effort.
 
 ## What's Been Implemented
 
-Upon loading up Level1, the character can be moved using WASD, with J attacking the area just in front of the player and K firing a projectile. 
+Upon loading up Level1, the character can be moved using WASD, with LMB attacking the area just in front of the player and RMB firing a projectile. 
 
 Generators have been implemented, and they can be placed in the scene. They expose an Object To Spawn variable that designers can change in-editor to be whatever actor class they desire. They can also be destroyed by the player.
 
